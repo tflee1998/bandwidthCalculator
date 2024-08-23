@@ -183,7 +183,7 @@
                 // Convert bandwidth to Gbps (Gigabits per second)
                 const bandwidthGbps =( bandwidthBps / 1e9)/dscRatio;
 
-                const pixelClockMHz = (width * height * refreshRate) / 1e6;
+                const pixelClockMHz = (width * height * refreshRate) / 1e6/dscRatio;
                 
                 // Add to total bandwidth
                 totalBandwidthGbps += bandwidthGbps;
